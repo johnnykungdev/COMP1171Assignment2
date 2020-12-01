@@ -1,0 +1,24 @@
+.header.darkTheme {
+    color: white;
+    background-color: black;
+}
+
+.sidebar.darkTheme {
+    color: white;
+    background-color: black;
+}
+
+.notesContainer.darkTheme {
+    color: white;
+    background-color: black;
+}
+
+.noteInput.darkTheme {
+    color: white;
+    background-color: rgb(49, 49, 49);
+}
+
+.footer.darkTheme {
+    color: white;
+    background-color: black;
+}

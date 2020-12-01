@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./assets/css/cssgrid.css" />
+        <link rel="stylesheet" href="./assets/css/darkTheme.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+        <title>New Note</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h2>Take Better Notes</h2>
+            </header>
+            <div class="sidebar">
+                <h3>My Note</h3>
+                <ul class="titleList" id="1">
+                </ul>
+            </div>
+            <div class="notesContainer">
+                <div class="buttonContainer top">
+                    <button id="newNote">New Note</button>
+                    <button id="darkTheme">Dark Theme</button>
+                </div>
+                <div class="noteContent">
+                    <input class="noteTitleInput" placeholder="Enter note title"/>
+                    <textarea class="noteInput" placeholder="This is a placeholder."></textarea>
+                </div>
+                <div class="buttonContainer bottom" id="buttonContainer">
+                    <button id="save">Save</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+            </div>
+            <footer class="footer">
+                <h2>Keep in Touch.</h2>
+                <div class="logoContainer">
+                    <img id="linkedin" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png" />
+                    <img id="global" src="https://cdn0.iconfinder.com/data/icons/internet-line/512/Internet_Line-02-512.png" />
+                </div>
+            </footer> 
+        </div>
+        <script src="./assets/js/index.js" type="module"></script>
+    </body>
+</html>
