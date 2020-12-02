@@ -11,8 +11,11 @@ export const listNoteTitle = (notesList, currentNote) => {
     newNotesTitleList.classList.add('titleList')
     notesList.forEach(note => {
         const noteTitle = document.createElement('li')
+        //<li></li>
         noteTitle.classList.add('noteListItem')
+        //<li class="noteListItem"></li>
         noteTitle.innerHTML = note.title
+        //<li class="noteListItem>note1</li>"
         noteTitle.addEventListener('click', function () {
             return selectNote(notesList, currentNote, note.id)
         })

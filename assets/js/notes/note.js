@@ -3,17 +3,19 @@ import { cancelInput } from "./cancelInput.js"
 import { newNote } from "./newNote.js"
 import { saveNewNote } from "./saveNewNote.js"
 
-const note = (notesList, currentNote) => {
+let notesList = []
+let currentNote = 1
+console.log(currentNote)
+
+function note(notesList, currentNote) {
     console.log(currentNote, notesList)
     const newNoteButton = document.getElementById('newNote')
     newNoteButton.addEventListener('click', function() {
-        console.log(currentNote)
         return newNote()
     })
 
     const saveButton = document.getElementById('save')
     saveButton.addEventListener('click', function() {
-        console.log(currentNote)
         return saveNewNote(notesList, currentNote)
     })
 

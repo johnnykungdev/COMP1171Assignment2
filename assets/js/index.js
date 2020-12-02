@@ -8,6 +8,4 @@ darkThemeButton.addEventListener('click', function() {
     return toggleDarkTheme(elementsArray)
 })
 
-let currentNote
-let notesList = []
-note(notesList, currentNote)
+note()
