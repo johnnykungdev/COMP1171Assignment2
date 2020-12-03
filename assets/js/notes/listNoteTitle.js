@@ -17,7 +17,7 @@ export const listNoteTitle = (notesList, currentNote) => {
         noteTitle.innerHTML = note.title
         //<li class="noteListItem>note1</li>"
         noteTitle.addEventListener('click', function () {
-            return selectNote(notesList, currentNote, note.id)
+            return selectNote(notesList, note.id)
         })
         newNotesTitleList.appendChild(noteTitle)
     })

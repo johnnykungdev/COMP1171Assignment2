@@ -1,6 +1,7 @@
 import { showInput } from './controllers/showInput.js'
+import { changeCurrentNote } from "./note.js"
 
-export const selectNote = (notesList, currentNote, selectedNoteId) => {
+export const selectNote = (notesList, selectedNoteId) => {
     const selectedNote = notesList.find(note => note.id === selectedNoteId)
     console.log(selectedNote)
     const noteContent = document.querySelector('.noteContent')
@@ -13,7 +14,8 @@ export const selectNote = (notesList, currentNote, selectedNoteId) => {
     if (noteContent.style.display === "none") {
         showInput()
     }
-    return currentNote = selectedNote
+
+    changeCurrentNote(selectedNote)
 }
 
 //need to changed currentNote, so that when saving, wouldn't create new note

@@ -4,10 +4,13 @@ import { newNote } from "./newNote.js"
 import { saveNewNote } from "./saveNewNote.js"
 
 let notesList = []
-let currentNote = 1
-console.log(currentNote)
+let currentNote
 
-function note(notesList, currentNote) {
+export function changeCurrentNote(newValue) {
+    return currentNote = newValue
+}
+
+function note() {
     console.log(currentNote, notesList)
     const newNoteButton = document.getElementById('newNote')
     newNoteButton.addEventListener('click', function() {
