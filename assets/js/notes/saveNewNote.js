@@ -12,6 +12,7 @@ export const saveNewNote = (notesList, currentNote) => {
         matchedNoteId.title = newNoteTitle
         matchedNoteId.body = newNoteContent
         resetInput()
+        listNoteTitle(notesList, currentNote)
         changeCurrentNote(undefined)
     } else {
         if (newNoteTitle && newNoteContent) {

@@ -1,0 +1,132 @@
+@media only screen and (max-width: 600px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    .container {
+        height: 100%;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-rows: 100px 200px 400px 100px;
+    }
+    
+    header {
+        background-color: #967e7e;
+    }
+    
+    h2 {
+        text-align: center;
+        margin: 0;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    .sidebar {
+        background-color: #c0c0c0;
+    }
+    
+    .noteListItem {
+        cursor: pointer;
+    }
+    
+    .notesContainer {
+        background-color: #ece8ec;
+        display: grid;
+        grid-template-columns: 7.5% 85% 7.5%;
+        grid-template-rows: minmax(56px, 7.5%) auto minmax(56px, 7.5%);
+    }
+    
+    .noteContent {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: grid;
+        grid-template-rows: 10% 90%;
+        grid-gap: 10px;
+    }
+    
+    .noteTitleInput {
+        padding: 12px;
+        outline: none;
+        border-radius: 10px;
+        border: none;
+        font-size: 14px;
+    }
+    
+    textarea {
+        display: block;
+        resize: none;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        padding: 12px;
+        font-size: 14px;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    .buttonContainer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+    button {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 12px 10px 12px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    #newNote {
+        background-color: #60987d;
+        position: relative;
+        left: 25px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    #darkTheme {
+        background-color: #696969;
+        float: right;
+        position: relative;
+        right: 25px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    .bottom {
+        text-align: center;
+    }
+    
+    #save {
+        background-color: #60987d;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    #cancel {
+        background-color: #d23c23;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    footer {
+        background-color: #debcba;
+        text-align: center;
+    }
+    
+    .logoContainer {
+        position: relative;
+        top: 35%;
+    }
+    
+    img {
+        height: 30px;
+        cursor: pointer;
+    }
+}
